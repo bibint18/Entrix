@@ -18,3 +18,12 @@ export const sendBooking =async (data:BookingData) => {
     throw error
   }
 }
+
+export const myBookings = async (email:string) => {
+  try {
+    const response = await axiosClient.get('/api/bookings',{params:{email}})
+    return response.data
+  } catch (error) {
+    throw error
+  }
+}

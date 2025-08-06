@@ -1,4 +1,3 @@
-
 "use client";
 import "react-datepicker/dist/react-datepicker.css";
 import { useState } from "react";
@@ -98,7 +97,7 @@ export default function Component() {
       </section>
 
       {showForm && (
-        <div className="fixed inset-0 bg-black/50 overflow-y-auto flex items-center justify-center z-50 px-4 py-8">
+        <div className="fixed inset-0 bg-black/50 overflow-y-auto flex items-center justify-center z-50 pt-60 px-4 py-8">
           <div className="relative w-full max-w-sm">
             <div className="absolute top-2 right-2 z-50">
               <button

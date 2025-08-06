@@ -6,4 +6,8 @@ export class BookingService implements IBookingService{
   async createBooking(data: IBooking): Promise<IBooking | null> {
     return this.bookingRepo.createBooking(data)
   }
+
+  async getBookings(email: string): Promise<IBooking[] | null> {
+    return this.bookingRepo.getBookings(email)
+  }
 }

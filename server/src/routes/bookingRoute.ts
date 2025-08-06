@@ -7,4 +7,5 @@ const bookingRepository = new BookingRepository()
 const bookingService = new BookingService(bookingRepository)
 const bookingController = new BookingController(bookingService)
 router.post('/bookings',bookingController.createBooking.bind(bookingController))
+router.get('/bookings',bookingController.getBookings.bind(bookingController))
 export default router
